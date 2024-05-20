@@ -1,0 +1,17 @@
+body {
+    background-color: #46d3b0;
+    width: 600px;
+    margin: 50px;
+}
+
+#primeira-div {
+    background-color: green;
+    width: 300px;
+    float: left;
+}
+
+#segunda-div {
+    background-color: blue;
+    width: 300px;
+    float: left;
+}

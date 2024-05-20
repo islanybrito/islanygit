@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <label>Número Decimal</label>
+    <input name="decimal" id="decimal_id" />
+    <button onclick="converte_octal()">Converter</button>
+    <br>
+    <label>Octal</label>
+    <input name="octal" id="octal_id" />
+
+
+    <script>
+        function converte_octal(){
+            var decimal = document.getElementById("decimal_id").value;
+            var octal = decimal_octal(Number(decimal));
+            document.getElementById("octal_id").value = octal;
+        }
+
+        function decimal_octal(numero){    
+            if(numero < 8){
+                return numero.toString();
+            }
+            octal = "";
+            while(numero > 7){
+                resto = numero % 8;
+                octal = resto.toString()+octal;
+                numero = Math.floor(numero/8);
+            }
+            return numero.toString()+octal;
+        }
+    </script>
+</body>
+</html>
