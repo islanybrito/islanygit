@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(135, 195, 219);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(7, 32, 18);
+}
+.principal{
+    width: 800px;
+    margin: 0 auto;
+    background-color: rgb(67, 67, 240);
+    text-align: center;
+}   
+.btn-enviar{
+    color: black;
+    background-color: yellow;
+}
+
+.btn-enviar:hover{
+    color: brown;
+    background-color: blue;
+}
+@media (max-width: 900px){
+    .principal{
+        width: 400px;
+        background-color: rgb(240, 137, 137);
+    }
+}

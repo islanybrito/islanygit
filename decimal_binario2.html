@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="binariodec.css" type="text/css">
 </head>
 
 <body background="">
+    <div class="principal">
     <h1 align="center" >Conversor de decimal para binário</h1>
     <p align="center" >
     <label><b>Número Decimal</b></label>
     <input name="decimal" id="decimal_id" />
-    <button onclick="converte_binario()">Converter</button>
+    <button class="btn-enviar" onclick="converte_binario()">Converter</button>
     <br>
     <br>
     <label><b>Binário</b></label>
     <input name="binario" id="binario_id" /></p>
     <hr>
-
+</div>
     <script>
         function converte_binario() {
             let decimal = document.getElementById("decimal_id").value;
